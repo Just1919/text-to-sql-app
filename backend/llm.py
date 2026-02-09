@@ -7,10 +7,10 @@ from openai import OpenAI
 load_dotenv("/mnt/c/Users/Justin/Desktop/FORMATION/ML/.env")
 # Access the keys as environment variables
 openai_key = os.getenv("OPENAI_API_KEY")
-print("Key loaded:", bool(openai_key))
+#print("Key loaded:", bool(openai_key))
 
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
-
+#client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 SYSTEM_PROMPT="""
 You are an expert data assistant
