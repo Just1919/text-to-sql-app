@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from .llm import text_to_sql  
+from llm import text_to_sql  
 
 app = FastAPI(title="Text-to-SQL API")  
 
